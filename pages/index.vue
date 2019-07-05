@@ -28,7 +28,7 @@ export default {
       })
     },
     createTodo(data) {
-      return this.$axios.get('https://wizardly-aryabhata-81d63a.netlify.com/.netlify/functions/custom-test')
+      return this.$axios.post('https://wizardly-aryabhata-81d63a.netlify.com/.netlify/functions/custom-test', data)
       .then(response => {
         console.log('Successfully FETCHED')
         return response
