@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nuxt />
+    123123
   </div>
 </template>
 
