@@ -25,10 +25,10 @@ export default {
 
     createTodo (data) {
       console.log('Bugger')
-      
+
       return fetch('/.netlify/lambdas/todos-create', {
-        body: JSON.stringify(data),
-        method: 'POST'
+        'body': JSON.stringify(data),
+        'method': 'POST'
       }).then(response => {
         return response.json()
       })
