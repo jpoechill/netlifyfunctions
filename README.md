@@ -1,6 +1,6 @@
-# netlifyfunctions
+# netlifyfunctions-02
 
-> My world-class Nuxt.js project
+> My bedazzling Nuxt.js project
 
 ## Build Setup
 
