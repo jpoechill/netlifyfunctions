@@ -12,13 +12,14 @@ const client = new faunadb.Client({
 exports.handler = (event, context, callback) => {
     const data = JSON.parse(event.body)
     console.log('Function `todo-create` invoked', data)
+
     const todoItem = {
       data: data
     }
 
     callback(null, {
         statusCode: 200,
-        body: 'Everything is okay!!'
+        body: 'Everything is okay 10!!'
     })
 }
 /* configure faunaDB Client with our secret */
