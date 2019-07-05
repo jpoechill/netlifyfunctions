@@ -28,7 +28,7 @@ export default {
       console.log('Bugger')
       console.log(data)
 
-      return this.$axios.post('/.netlify/functions/todos-create', data)
+      return this.$axios.post('https://wizardly-aryabhata-81d63a.netlify.com/.netlify/functions/todos-create', data)
       .then(response => {
         return response.json()
       })
