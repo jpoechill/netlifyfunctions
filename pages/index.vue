@@ -22,7 +22,10 @@ export default {
         console.log('API error', error)
       })
     },
+
     createTodo (data) {
+      console.log('Bugger')
+      
       return fetch('/.netlify/lambdas/todos-create', {
         body: JSON.stringify(data),
         method: 'POST'
