@@ -28,8 +28,9 @@ export default {
       console.log('Bugger')
       console.log(data)
 
-      return this.$axios.get('https://wizardly-aryabhata-81d63a.netlify.com/.netlify/functions/test')
+      return this.$axios.get('/.netlify/functions/test')
       .then(response => {
+        console.log('There was success!') 
         console.log(response)
         console.log(response.json())
         return response.json()
