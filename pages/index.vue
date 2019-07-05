@@ -6,6 +6,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
   methods: {
     handleClick () {
@@ -27,10 +28,8 @@ export default {
       console.log('Bugger')
       console.log(data)
 
-      return fetch('/.netlify/functions/todos-create', {
-        'body': JSON.stringify(data),
-        'method': 'POST'
-      }).then(response => {
+      return this.$axios.post('/.netlify/functions/todos-create', data)
+      .then(response => {
         return response.json()
       })
     }
