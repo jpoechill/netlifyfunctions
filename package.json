@@ -13,7 +13,7 @@
     "start:server": "netlify-lambda serve lambdas",
     "prebuild": "echo 'setup faunaDB' && npm run bootstrap",
     "build": "npm-run-all --parallel build:**",
-    "build:app": "nuxt build",
+    "build:app": "nuxt generate",
     "build:functions": "netlify-lambda build lambdas"
   },
   "dependencies": {
