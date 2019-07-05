@@ -7,6 +7,8 @@ const q = faunadb.query
 
 console.log(chalk.cyan('Creating your FaunaDB Database...\n'))
 
+process.env.FAUNADB_SECRET = 'fnADShQvS9ACAHyTZ1e6xHU9TCwXuwyN6N2o2HaU'
+
 // 1. Check for required enviroment variables
 if (!process.env.FAUNADB_SECRET) {
   console.log(chalk.yellow('Required FAUNADB_SECRET enviroment variable not found.'))
