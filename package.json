@@ -14,7 +14,7 @@
     "@nuxtjs/axios": "^5.3.6",
     "cross-env": "^5.2.0",
     "faunadb": "^2.6.1",
-    "nuxt": "^2.3.4"
+    "nuxt": "^2.15.8"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"
